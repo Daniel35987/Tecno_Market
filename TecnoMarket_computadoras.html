@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Tecnología</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- CDN de Font Awesome -->
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="header-content">
+      <a href="TecnoMarket.html" class="imagen_click">
+        <img href="TecnoMarket.html" src="Imágenes/Logo_TecnoMarket.png" alt="Logo de la tienda" class="logo">
+      </a>
+        <p>Potencia tu negocio con nuestras soluciones tecnológicas innovadoras y a la vanguardia. ¡Transforma el futuro hoy!</p>
+      <div class="logo-search">
+        <input type="text" placeholder="Buscar productos..." class="search-bar">
+        <button class="search-button">Buscar</button>
+      </div>
+    </div>
+    <div class="menu-bar">
+      <a href="TecnoMarket_computadoras.html"><i class="fa-solid fa-computer"></i>COMPUTADORAS</a>
+      <a href="TecnoMarket_laptops.html">LAPTOPS</a>
+      <a href="TecnoMarket_monitores.html">MONITORES</a>
+      <a href="TecnoMarket_componentes-PC.html">DISPOTIVIVOS PC</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="section filtros">
+    <!-- Título de la sección -->
+    <h1 class="Título_PG">COMPUTADORAS</h1>
+    
+    <!-- Filtros de búsqueda -->
+    <select id="filtroCategoria" class="search-bar">
+      <option value="" selected>Filtrar por categoría</option>
+      <option value="gaming">Gaming</option>
+      <option value="oficina">Oficina</option>
+      <option value="estudiantes">Estudiantes</option>
+    </select>
+    <select id="filtroMarca" class="search-bar">
+      <option value="" selected>Filtrar por marca</option>
+      <option value="HP">HP</option>
+      <option value="Dell">Dell</option>
+      <option value="Lenovo">Lenovo</option>
+      <option value="Otro">Otro</option>
+    </select>
+
+  <br>
+    <!-- Productos -->
+    <section class="todos_los_productos">
+      <!-- Producto 1 -->
+      <div class="producto" data-categoria="oficina" data-marca="HP">
+        <img src="Imágenes/Computadoras/HP_Pavilion_Desktop.png" alt="Computadora Oficina">
+        <h3>HP Pavilion Desktop</h3>
+        <ul class="caracteristicas">
+          <li>- Procesador Intel Core i5 o i7</li>
+          <li>- 8 GB o más de RAM</li>
+          <li>- Almacenamiento SSD desde 256 GB, con opción a HDD adicional</li>
+        </ul>
+        <button class="boton_detalles" onclick="mostrarMensaje()">S/ 2,500</button>
+        <p id="mensaje"></p>
+      </div>
+      <!-- Producto 2 -->
+      <div class="producto" data-categoria="estudiantes" data-marca="Otro">
+        <img src="Imágenes/Computadoras/Acer_Aspire_TC.png" alt="Computadora Estudiantes">
+        <h3>Acer Aspire TC</h3>
+        <ul class="caracteristicas">
+          <li>- Procesadores Intel o AMD</li>
+          <li>- Opciones de RAM desde 8 GB</li>
+          <li>- Almacenamiento híbrido (SSD + HDD)</li>
+        </ul>
+        <button class="boton_detalles" onclick="mostrarMensaje()">S/ 2,300</button>
+        <p class="mensaje"></p>
+      </div>
+      <!-- Producto 3 -->
+      <div class="producto" data-categoria="gaming" data-marca="Otro">
+        <img src="Imágenes/Computadoras/Acer_Predator_Orion_3000.png" alt="Computadora Gaming">
+        <h3>Acer Predator Orion 3000</h3>
+        <ul class="caracteristicas">
+          <li>- Procesador Intel Core i7 de última generación</li>
+          <li>- Gráficos NVIDIA GeForce RTX 3060/3070</li>
+          <li>- 16 GB de RAM y SSD de 1 TB</li>
+        </ul>
+        <button class="boton_detalles" onclick="mostrarMensaje()">S/ 5,500</button>
+        <p class="mensaje"></p>
+      </div>
+      <div class="producto" data-categoria="gaming" data-marca="Otro">
+        <img src="Imágenes/Computadoras/Asus_ROG_Strix_GA15.png" alt="Computadora Gaming">
+        <h3>Asus ROG Strix GA15</h3>
+        <ul class="caracteristicas">
+          <li>- Procesador AMD Ryzen 9 5900X</li>
+          <li>- GPU NVIDIA RTX 3080</li>
+          <li>- Sistema de refrigeración líquida.</li>
+        </ul>
+        <button class="boton_detalles" onclick="mostrarMensaje()">S/ 5,500</button>
+        <p class="mensaje"></p>
+      </div>
+      <div class="producto" data-categoria="oficina" data-marca="Dell">
+        <img src="Imágenes/Computadoras/Dell_OptiPlex_7090.png" alt="Computadora Oficina">
+        <h3>Dell OptiPlex 7090</h3>
+        <ul class="caracteristicas">
+          <li>- Procesadores Intel Core i5/i7 de 11.ª generación</li>
+          <li>- Opciones de gráficos integrados o dedicados</li>
+          <li>- Diseñado para configuraciones personalizables en oficinas</li>
+        </ul>
+        <button class="boton_detalles" onclick="mostrarMensaje()">S/ 3,500</button>
+        <p class="mensaje"></p>
+      </div>
+      <div class="producto" data-categoria="gaming" data-marca="Lenovo">
+        <img src="Imágenes/Computadoras/Lenovo_Legion_Tower_5.png" alt="Computadora Gaming">
+        <h3>Lenovo Legion Tower 5</h3>
+        <ul class="caracteristicas">
+          <li>- Procesador AMD Ryzen 7</li>
+          <li>- Gráficos NVIDIA GeForce GTX 1660 o RTX 3060</li>
+          <li>- Hasta 32 GB de RAM</li>
+        </ul>
+        <button class="boton_detalles" onclick="mostrarMensaje()">S/ 5,000​</button>
+        <p class="mensaje"></p>
+      </div>
+      <div class="producto" data-categoria="oficina" data-marca="Lenovo">
+        <img src="Imágenes/Computadoras/Lenovo_ThinkCentre.png" alt="Computadora Oficina">
+        <h3>Lenovo ThinkCentre M70t</h3>
+        <ul class="caracteristicas">
+          <li>- Procesador Intel Core i3, i5 o AMD Ryzen</li>
+          <li>- Varias configuraciones de memoria RAM y almacenamiento/li>
+          <li>- Diseñado para uso corporativo o empresarial.</li>
+        </ul>
+        <button class="boton_detalles" onclick="mostrarMensaje()">S/ 2,000</button>
+        <p class="mensaje"></p>
+      </div>
+      <div class="producto" data-categoria="gaming" data-marca="HP">
+        <img src="Imágenes/Computadoras/HP_Omen_30L.png" alt="Computadora Gaming">
+        <h3>HP Omen 30L</h3>
+        <ul class="caracteristicas">
+          <li>- Procesadores AMD Ryzen o Intel Core i9</li>
+            <li>- Gráficos NVIDIA RTX 3080</li>
+            <li>- Configuraciones personalizables con iluminación RGB</li>
+        </ul>
+        <button class="boton_detalles" onclick="mostrarMensaje()">S/ 8,000​</button>
+        <p class="mensaje"></p>
+      </div>
+      <div class="producto" data-categoria="estudiantes" data-marca="Dell">
+        <img src="Imágenes/Computadoras/Dell_Inspiron_Desktop.png" alt="Computadora Estudiantes">
+        <h3>Dell Inspiron Desktop</h3>
+        <ul class="caracteristicas">
+          <li>- Procesadores Intel Core i5 o AMD Ryzen 5</li>
+          <li>- 8 GB de RAM o más</li>
+          <li>- Opciones de gráficos integrados o dedicados (NVIDIA o AMD)</li>
+        </ul>
+        <button class="boton_detalles" onclick="mostrarMensaje()">S/ 2,300</button>
+        <p class="mensaje"></p>
+      </div>
+      <div class="producto" data-categoria="estudiantes" data-marca="Dell">
+        <img src="Imágenes/Computadoras/Dell_XPS_Desktop.png" alt="Computadora Estudiantes">
+        <h3>Dell XPS Desktop</h3>
+        <ul class="caracteristicas">
+          <li>- Intel Core i7 o i9 de 12.ª generación</li>
+          <li>- NVIDIA GeForce RTX 3060/3070/3080 o AMD Radeon RX 6700 XT</li>
+          <li>- Hasta 64 GB DDR5</li>
+        </ul>
+        <button class="boton_detalles" onclick="mostrarMensaje()">S/ 5,000</button>
+        <p class="mensaje"></p>
+      </div>
+      <div class="producto" data-categoria="estudiantes" data-marca="HP">
+        <img src="Imágenes/Computadoras/HP_ProDesk_400_G6 MT.png" alt="Computadora Estudiantes">
+        <h3>HP ProDesk 400 G6 MT</h3>
+        <ul class="caracteristicas">
+          <li>- Intel Core i5 o i7 de 10.ª generación</li>
+          <li>- Gráficos Intel UHD o GPU dedicada AMD Radeon RX 550</li>
+          <li>- Hasta 32 GB DDR4</li>
+        </ul>
+        <button class="boton_detalles" onclick="mostrarMensaje()">S/ 2,300</button>
+        <p class="mensaje"></p>
+      </div>
+      <div class="producto" data-categoria="gaming" data-Marca="Otro">
+        <img src="Imágenes/Computadoras/ASUS_ROG_Strix_GA35.png" alt="Computadora Gaming">
+        <h3>ASUS ROG Strix GA35</h3>
+        <ul class="caracteristicas">
+          <li>- Procesador AMD Ryzen 7 o Ryzen 9</li>
+          <li>- Tarjeta gráfica NVIDIA GeForce RTX 3060/3070</li>
+          <li>- Hasta 16 GB de RAM y almacenamiento SSD de 512 GB o más.</li>
+        </ul>
+        <button class="boton_detalles" onclick="mostrarMensaje()">S/ 9,000​</button>
+        <p class="mensaje"></p>
+      </div>
+      <div class="producto" data-categoria="gaming" data-Marca="HP">
+        <img src="Imágenes/Computadoras/HP_Omen_45L.png" alt="Computadora Gaming">
+        <h3>HP Omen 45L</h3>
+        <ul class="caracteristicas">
+          <li>- Procesador Intel Core i7 o i9 de última generación</li>
+          <li>- Gráficos NVIDIA RTX 3070/3080/4090</li>
+          <li>- Sistema de enfriamiento avanzado con Omen Cryo Chamber.</li>
+        </ul>
+        <button class="boton_detalles" onclick="mostrarMensaje()">S/ 9,500</button>
+        <p class="mensaje"></p>
+      </div>
+      <div class="producto" data-categoria="gaming" data-Marca="Otro">
+        <img src="Imágenes/Computadoras/Acer_Predator_Orion_5000.png" alt="Computadora Gaming">
+        <h3>Acer Predator Orion 5000</h3>
+        <ul class="caracteristicas">
+          <li>- Procesador Intel Core i7 o i9</li>
+          <li>- GPU NVIDIA RTX 3080</li>
+          <li>- Sistema de ventilación avanzado con Predator FrostBlade.</li>
+        </ul>
+        <button class="boton_detalles" onclick="mostrarMensaje()">S/ 10,500</button>
+        <p class="mensaje"></p>
+      </div>
+      <div class="producto" data-categoria="gaming" data-Marca="Lenovo">
+        <img src="Imágenes/Computadoras/Lenovo_Legion_T7.png" alt="Computadora Gaming">
+        <h3>Lenovo Legion T7</h3>
+        <ul class="caracteristicas">
+          <li>- Procesador Intel Core i7 de 12.ª generación</li>
+          <li>- Tarjeta gráfica NVIDIA RTX 3060/3080</li>
+          <li>- Hasta 32 GB de RAM y SSD de 1 TB.</li>
+        </ul>
+        <button class="boton_detalles" onclick="mostrarMensaje()">S/ 8,000</button>
+        <p class="mensaje"></p>
+      </div>
+    </section>   
+  </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <a href="informacion.html">Información</a> |
+      <a href="terminos.html">Términos y Condiciones</a> |
+      <a href="faq.html">Preguntas Frecuentes</a> |
+      <a href="https://www.facebook.com" target="_blank">Redes Sociales</a>
+    </p>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

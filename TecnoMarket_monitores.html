@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Tecnología</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- CDN de Font Awesome -->
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="header-content">
+      <a href="TecnoMarket.html" class="imagen_click">
+        <img href="TecnoMarket.html" src="Imágenes/Logo_TecnoMarket.png" alt="Logo de la tienda" class="logo">
+        </a>
+        <p>Potencia tu negocio con nuestras soluciones tecnológicas innovadoras y a la vanguardia. ¡Transforma el futuro hoy!</p>
+      <div class="logo-search">
+        <input type="text" placeholder="Buscar productos..." class="search-bar">
+        <button class="search-button">Buscar</button>
+      </div>
+    </div>
+    <div class="menu-bar">
+      <a href="TecnoMarket_computadoras.html"><i class="fa-solid fa-computer"></i>COMPUTADORAS</a>
+      <a href="TecnoMarket_laptops.html">LAPTOPS</a>
+      <a href="TecnoMarket_monitores.html">MONITORES</a>
+      <a href="TecnoMarket_componentes-PC.html">DISPOTIVIVOS PC</a>
+    </div>
+  </header>
+
+  <main> 
+    <div class="section filtros">
+        <!-- Título de la sección -->
+        <h1 class="Título_PG">MONITORES</h1>
+        
+        <!-- Filtros de búsqueda -->
+        <select id="filtroCategoria" class="search-bar">
+            <option value="" selected>Filtrar por categoría</option>
+            <option value="gaming">Gaming</option>
+            <option value="oficina">Oficina</option>
+        </select>
+        <select id="filtroMarca" class="search-bar">
+            <option value="" selected>Filtrar por marca</option>
+            <option value="HP">HP</option>
+            <option value="Acer">Acer</option>
+            <option value="Dell">Dell</option>
+            <option value="Asus">Asus</option>
+            <option value="Samsung">Samsung</option>
+            <option value="LG">LG</option>
+            <option value="BenQ">BenQ</option>
+        </select>
+    
+        <br>
+        <!-- Productos -->
+        <section class="todos_los_productos">
+          <!-- HP -->
+          <div class="producto" data-categoria="oficina" data-marca="HP">
+              <img src="Imágenes/Monitores/HP_M24fw_FHD.png" alt="Monitor HP M24fw">
+              <h3>HP M24fw FHD</h3>
+              <ul class="caracteristicas">
+                  <li>- Resolución Full HD (1920 x 1080)</li>
+                  <li>- Panel IPS</li>
+                  <li>- AMD FreeSync™ y Eyesafe® Certified</li>
+              </ul>
+              <button class="boton_detalles">S/ 600</button>
+          </div>
+          <div class="producto" data-categoria="oficina" data-marca="HP">
+              <img src="Imágenes/Monitores/HP_EliteDisplay_E243.png" alt="Monitor HP EliteDisplay E243">
+              <h3>HP EliteDisplay E243</h3>
+              <ul class="caracteristicas">
+                  <li>- Resolución Full HD (1920 x 1080)</li>
+                  <li>- Panel IPS</li>
+                  <li>- Ajustes ergonómicos y biseles delgados</li>
+              </ul>
+              <button class="boton_detalles">S/ 800</button>
+          </div>
+          <!-- Acer -->
+          <div class="producto" data-categoria="gaming" data-marca="Acer">
+              <img src="Imágenes/Monitores/Acer_Nitro_KG241Y.png" alt="Monitor Acer Nitro KG241Y">
+              <h3>Acer Nitro KG241Y</h3>
+              <ul class="caracteristicas">
+                  <li>- Resolución Full HD (1920 x 1080)</li>
+                  <li>- Panel IPS, 165Hz</li>
+                  <li>- FreeSync™</li>
+              </ul>
+              <button class="boton_detalles">S/ 800</button>
+          </div>
+          <div class="producto" data-categoria="gaming" data-marca="Acer">
+              <img src="Imágenes/Monitores/Acer_Predator_X34.png" alt="Monitor Acer Predator X34">
+              <h3>Acer Predator X34</h3>
+              <ul class="caracteristicas">
+                  <li>- Resolución UWQHD (3440 x 1440)</li>
+                  <li>- Curvado 1900R, 180Hz</li>
+                  <li>- G-Sync compatible</li>
+              </ul>
+              <button class="boton_detalles">S/ 3,500</button>
+          </div>
+          <!-- Dell -->
+          <div class="producto" data-categoria="gaming" data-marca="Dell">
+              <img src="Imágenes/Monitores/Dell_S2421H.png" alt="Monitor Dell S2421H">
+              <h3>Dell S2421H</h3>
+              <ul class="caracteristicas">
+                  <li>- Resolución Full HD (1920 x 1080)</li>
+                  <li>- Panel IPS</li>
+                  <li>- Colores precisos y ángulos de visión amplios</li>
+              </ul>
+              <button class="boton_detalles">S/ 650</button>
+          </div>
+          <div class="producto" data-categoria="gaming" data-marca="Dell">
+              <img src="Imágenes/Monitores/Dell_U4021QW.png" alt="Monitor Dell U4021QW">
+              <h3>Dell U4021QW</h3>
+              <ul class="caracteristicas">
+                  <li>- Resolución 5K2K (5120 x 2160)</li>
+                  <li>- Pantalla curva 2500R</li>
+                  <li>- USB-C, Thunderbolt 3</li>
+              </ul>
+              <button class="boton_detalles">S/ 6,000</button>
+          </div>
+          <!-- Asus -->
+          <div class="producto" data-categoria="gaming" data-marca="Asus">
+              <img src="Imágenes/Monitores/ASUS_VG248QG.png" alt="Monitor ASUS VG248QG">
+              <h3>ASUS VG248QG</h3>
+              <ul class="caracteristicas">
+                  <li>- Resolución Full HD (1920 x 1080)</li>
+                  <li>- Panel TN, 165Hz</li>
+                  <li>- G-Sync compatible</li>
+              </ul>
+              <button class="boton_detalles">S/ 1,000</button>
+          </div>
+          <div class="producto" data-categoria="gaming" data-marca="Asus">
+              <img src="Imágenes/Monitores/ASUS_ROG_Strix_XG27UQ.png" alt="Monitor ASUS ROG Strix XG27UQ">
+              <h3>ASUS ROG Strix XG27UQ</h3>
+              <ul class="caracteristicas">
+                  <li>- Resolución 4K UHD (3840 x 2160)</li>
+                  <li>- Panel IPS, 144Hz</li>
+                  <li>- HDR10, G-Sync compatible</li>
+              </ul>
+              <button class="boton_detalles">S/ 2,500</button>
+          </div>
+          <!-- Samsung -->
+          <div class="producto" data-categoria="gaming" data-marca="Samsung">
+              <img src="Imágenes/Monitores/Samsung_Odyssey_LC27G55TQWEXX.png" alt="Monitor Samsung Odyssey LC27G55TQWEXX">
+              <h3>Samsung Odyssey LC27G55TQWEXX</h3>
+              <ul class="caracteristicas">
+                  <li>- Resolución Full HD (1920 x 1080)</li>
+                  <li>- Panel Curvo</li>
+                  <li>- 240Hz para juegos, FreeSync Premium</li>
+              </ul>
+              <button class="boton_detalles">S/ 1,400</button>
+          </div>
+          <div class="producto" data-categoria="gaming" data-marca="Samsung">
+              <img src="Imágenes/Monitores/Samsung_Ultra_Wide_C49G95T.png" alt="Monitor Samsung Ultra Wide C49G95T">
+              <h3>Samsung Ultra Wide C49G95T</h3>
+              <ul class="caracteristicas">
+                  <li>- Resolución Dual QHD (5120 x 1440)</li>
+                  <li>- Curvado 1000R, 240Hz</li>
+                  <li>- Quantum Dot Technology</li>
+              </ul>
+              <button class="boton_detalles">S/ 3,200</button>
+          </div>
+          <!-- LG -->
+          <div class="producto" data-categoria="gaming" data-marca="LG">
+              <img src="Imágenes/Monitores/LG_27GN800-B.png" alt="Monitor LG 27GN800-B">
+              <h3>LG 27GN800-B</h3>
+              <ul class="caracteristicas">
+                  <li>- Resolución QHD (2560 x 1440)</li>
+                  <li>- Panel IPS, 165Hz</li>
+                  <li>- G-Sync compatible</li>
+              </ul>
+              <button class="boton_detalles">S/ 1,400</button>
+          </div>
+          <div class="producto" data-categoria="gaming" data-marca="LG">
+              <img src="Imágenes/Monitores/LG_34GP83A-B.png" alt="Monitor LG 34GP83A-B">
+              <h3>LG 34GP83A-B</h3>
+              <ul class="caracteristicas">
+                  <li>- Resolución UWQHD (3440 x 1440)</li>
+                  <li>- Curvado 1500R, 160Hz</li>
+                  <li>- Nano IPS, G-Sync Compatible</li>
+              </ul>
+              <button class="boton_detalles">S/ 2,505</button>
+            </div>
+            <!-- Producto 7 -->
+            <div class="producto" data-categoria="gaming" data-marca="BenQ">
+              <img src="Imágenes/Monitores/BenQ_EX2780Q.png" alt="Monitor BenQ EX2780Q">
+              <h3>BenQ EX2780Q</h3>
+              <ul class="caracteristicas">
+                  <li>- Resolución QHD (2560 x 1440)</li>
+                  <li>- Panel IPS, 144Hz</li>
+                  <li>- Soporte HDRi</li>
+              </ul>
+              <button class="boton_detalles">S/ 2,200</button>
+          </div>
+    </div>
+</div>
+</main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <a href="informacion.html">Información</a> |
+      <a href="terminos.html">Términos y Condiciones</a> |
+      <a href="faq.html">Preguntas Frecuentes</a> |
+      <a href="https://www.facebook.com" target="_blank">Redes Sociales</a>
+    </p>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

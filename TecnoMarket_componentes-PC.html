@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Tecnología</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- CDN de Font Awesome -->
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="header-content">
+      <a href="TecnoMarket.html" class="imagen_click">
+        <img href="TecnoMarket.html" src="Imágenes/Logo_TecnoMarket.png" alt="Logo de la tienda" class="logo">
+        </a>
+        <p>Potencia tu negocio con nuestras soluciones tecnológicas innovadoras y a la vanguardia. ¡Transforma el futuro hoy!</p>
+      <div class="logo-search">
+        <input type="text" placeholder="Buscar productos..." class="search-bar">
+        <button class="search-button">Buscar</button>
+      </div>
+    </div>
+    <div class="menu-bar">
+      <a href="TecnoMarket_computadoras.html"><i class="fa-solid fa-computer"></i>COMPUTADORAS</a>
+      <a href="TecnoMarket_laptops.html">LAPTOPS</a>
+      <a href="TecnoMarket_monitores.html">MONITORES</a>
+      <a href="TecnoMarket_componentes-PC.html">DISPOTIVIVOS PC</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="section filtros">
+        <!-- Título de la sección -->
+        <h1 class="Título_PG">COMPONENTES</h1>
+        <!-- Filtros de búsqueda -->
+        <select id="filtroTipo" class="search-bar">
+          <option value="" selected>Filtrar por tipo</option>
+          <option value="Teclado">Teclados</option>
+          <option value="Mouse">Mouses</option>
+          <option value="Audifono">Audifonos</option>
+          <option value="Otro">Otros</option>
+      </select> 
+        <select id="filtroCategoria" class="search-bar">
+            <option value="" selected>Filtrar por categoría</option>
+            <option value="gaming">Gaming</option>
+            <option value="oficina">Oficina</option>
+            <option value="estudiantes">Estudiantes</option>
+        </select>
+        <select id="filtroMarca" class="search-bar">
+            <option value="" selected>Filtrar por marca</option>
+            <option value="Logitech">Logitech</option>
+            <option value="Razer">Razer</option>
+            <option value="Corsair">Corsair</option>
+            <option value="HyperX">HyperX</option>
+            <option value="Otro">Otro</option>
+        </select> 
+        <br>
+        <!-- Productos -->
+        <section class="todos_los_productos">
+            <!-- Producto 1 -->
+            <div class="producto" data-tipo="teclado" data-categoria="gaming" data-marca="Logitech">
+                <img src="Imágenes/Componentes/Teclados/Logitech_G915.png" alt="Teclado Gaming Logitech">
+                <h3>Logitech G915 TKL</h3>
+                <ul class="caracteristicas">
+                    <li>- Switches mecánicos GL (Clicky, Táctil, Linear)</li>
+                    <li>- Iluminación RGB personalizable</li>
+                    <li>- Conexión inalámbrica LIGHTSPEED</li>
+                </ul>
+                <button class="boton_detalles">S/ 350</button>
+            </div>
+            <!-- Producto 2 -->
+            <div class="producto" data-tipo="teclado" data-categoria="oficina" data-marca="Logitech">
+                <img src="Imágenes/Componentes/Teclados/Logitech_K840.png" alt="Teclado Oficina Logitech">
+                <h3>Logitech K840</h3>
+                <ul class="caracteristicas">
+                    <li>- Teclas de alta durabilidad</li>
+                    <li>- Conexión USB con cable</li>
+                    <li>- Diseño ergonómico</li>
+                </ul>
+                <button class="boton_detalles">S/ 120</button>
+            </div>
+            <!-- Producto 3 -->
+            <div class="producto" data-tipo="teclado" data-categoria="gaming" data-marca="Razer">
+                <img src="Imágenes/Componentes/Teclados/Razer_BlackWidow_V3.png" alt="Teclado Gaming Razer">
+                <h3>Razer BlackWidow V3</h3>
+                <ul class="caracteristicas">
+                    <li>- Switches mecánicos Razer Green</li>
+                    <li>- Iluminación RGB Chroma</li>
+                    <li>- Diseño resistente al agua</li>
+                </ul>
+                <button class="boton_detalles">S/ 420</button>
+            </div>
+            <!-- Producto 4 -->
+            <div class="producto" data-tipo="teclado" data-categoria="gaming" data-marca="Corsair">
+                <img src="Imágenes/Componentes/Teclados/Corsair_K95.png" alt="Teclado Gaming Corsair">
+                <h3>Corsair K95 RGB Platinum</h3>
+                <ul class="caracteristicas">
+                    <li>- Switches Cherry MX</li>
+                    <li>- Iluminación RGB dinámica</li>
+                    <li>- 6 teclas macro programables</li>
+                </ul>
+                <button class="boton_detalles">S/ 600</button>
+            </div>
+            <!-- Producto 5 -->
+            <div class="producto" data-tipo="teclado" data-categoria="gaming" data-marca="HyperX">
+                <img src="Imágenes/Componentes/Teclados/HyperX_Alloy_Elite.png" alt="Teclado Gaming HyperX">
+                <h3>HyperX Alloy Elite RGB</h3>
+                <ul class="caracteristicas">
+                    <li>- Switches mecánicos Cherry MX</li>
+                    <li>- Iluminación RGB personalizable</li>
+                    <li>- Estructura de acero duradera</li>
+                </ul>
+                <button class="boton_detalles">S/ 500</button>
+            </div>
+            <!-- Producto 6 -->
+            <div class="producto" data-tipo="teclado" data-categoria="oficina" data-marca="Razer">
+                <img src="Imágenes/Componentes/Teclados/Razer_Cynosa_V2.png" alt="Teclado Oficina Razer">
+                <h3>Razer Cynosa V2</h3>
+                <ul class="caracteristicas">
+                    <li>- Switches de membrana</li>
+                    <li>- Iluminación RGB personalizable</li>
+                    <li>- Diseño ergonómico y resistente</li>
+                </ul>
+                <button class="boton_detalles">S/ 150</button>
+            </div>
+            <!-- Producto 7 -->
+            <div class="producto" data-tipo="teclado" data-categoria="estudiantes" data-marca="Logitech">
+                <img src="Imágenes/Componentes/Teclados/Logitech_K120.png" alt="Teclado Estudiantes Logitech">
+                <h3>Logitech K120</h3>
+                <ul class="caracteristicas">
+                    <li>- Diseño compacto y duradero</li>
+                    <li>- Conexión USB</li>
+                    <li>- Teclado resistente al agua</li>
+                </ul>
+                <button class="boton_detalles">S/ 80</button>
+            </div>
+            <!-- Producto 8 -->
+            <div class="producto" data-tipo="teclado" data-categoria="gaming" data-marca="Logitech">
+                <img src="Imágenes/Componentes/Teclados/Logitech_G213.png" alt="Teclado Gaming Logitech">
+                <h3>Logitech G213 Prodigy</h3>
+                <ul class="caracteristicas">
+                    <li>- Switches mecánicos de membrana</li>
+                    <li>- Iluminación RGB LIGHTSYNC</li>
+                    <li>- Teclado resistente a salpicaduras</li>
+                </ul>
+                <button class="boton_detalles">S/ 250</button>
+            </div>
+            <div class="producto" data-tipo="teclado" data-categoria="oficina" data-marca="HyperX">
+              <img src="Imágenes/Componentes/Teclados/HyperX_Elite.png" alt="Teclado Oficina HyperX">
+              <h3>HyperX Alloy Core</h3>
+              <ul class="caracteristicas">
+                  <li>- Teclas silenciosas</li>
+                  <li>- Iluminación RGB de 5 zonas</li>
+                  <li>- Resistente a salpicaduras</li>
+              </ul>
+              <button class="boton_detalles">S/ 200</button>
+          </div>
+          <div class="producto" data-tipo="teclado" data-categoria="gaming" data-marca="HyperX">
+            <img src="Imágenes/Componentes/Teclados/HyperX_Alloy_FPS.png" alt="Teclado Gaming HyperX">
+            <h3>HyperX Alloy FPS Pro</h3>
+            <ul class="caracteristicas">
+                <li>- Switches mecánicos Cherry MX Red</li>
+                <li>- Diseño compacto y portátil</li>
+                <li>- Iluminación LED roja</li>
+            </ul>
+            <button class="boton_detalles">S/ 280</button>
+        </div>
+        <div class="producto" data-tipo="teclado" data-categoria="gaming" data-marca="Razer">
+          <img src="Imágenes/Componentes/Teclados/Razer_Huntsman.png" alt="Teclado Gaming Razer">
+          <h3>Razer Huntsman Mini</h3>
+          <ul class="caracteristicas">
+              <li>- Switches ópticos lineales</li>
+              <li>- Diseño 60%</li>
+              <li>- Iluminación Razer Chroma</li>
+          </ul>
+          <button class="boton_detalles">S/ 500</button>
+      </div>
+      <div class="producto" data-tipo="teclado" data-categoria="oficina" data-marca="Corsair">
+        <img src="Imágenes/Componentes/Teclados/Corsair_K55.png" alt="Teclado Oficina Corsair">
+        <h3>Corsair K55 RGB</h3>
+        <ul class="caracteristicas">
+            <li>- Switches de membrana silenciosos</li>
+            <li>- Iluminación RGB de 6 zonas</li>
+            <li>- Reposamuñecas desmontable</li>
+        </ul>
+        <button class="boton_detalles">S/ 180</button>
+      </div>
+       <!-- MOUSES -->
+      <div class="producto" data-tipo="mouse" data-categoria="gaming" data-marca="Logitech">
+        <img src="Imágenes/Componentes/Mouses/Logitech_G502X.png" alt="Mouse Gaming Logitech G502X">
+        <h3>Logitech G502X</h3>
+        <ul class="caracteristicas">
+            <li>- Sensor de 25K DPI</li>
+            <li>- Botones híbridos óptico-mecánicos</li>
+            <li>- Diseño ergonómico</li>
+        </ul>
+        <button class="boton_detalles">S/ 350</button>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="producto" data-tipo="mouse" data-categoria="gaming" data-marca="Razer">
+        <img src="Imágenes/Componentes/Mouses/Razer_Basilisk_V3.png" alt="Mouse Gaming Razer Basilisk V3">
+        <h3>Razer Basilisk V3</h3>
+        <ul class="caracteristicas">
+            <li>- Sensor de 24K DPI</li>
+            <li>- 11 botones programables</li>
+            <li>- Iluminación RGB</li>
+        </ul>
+        <button class="boton_detalles">S/ 320</button>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="producto" data-tipo="mouse" data-categoria="gaming" data-marca="Logitech">
+        <img src="Imágenes/Componentes/Mouses/Logitech_Pro_X_Superlight.png" alt="Mouse Gaming Logitech Pro X Superlight">
+        <h3>Logitech Pro X Superlight 2</h3>
+        <ul class="caracteristicas">
+            <li>- Sensor Hero 2</li>
+            <li>- Peso ultraligero</li>
+            <li>- Switches híbridos</li>
+        </ul>
+        <button class="boton_detalles">S/ 450</button>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="producto" data-tipo="mouse" data-categoria="gaming" data-marca="Corsair">
+        <img src="Imágenes/Componentes/Mouses/Corsair_Katar_Pro_XT.png" alt="Mouse Gaming Corsair Katar Pro XT">
+        <h3>Corsair Katar Pro XT</h3>
+        <ul class="caracteristicas">
+            <li>- Diseño ambidiestro</li>
+            <li>- Sensor de alta precisión</li>
+            <li>- Peso ligero</li>
+        </ul>
+        <button class="boton_detalles">S/ 120</button>
+    </div>
+    <div class="producto" data-tipo="mouse" data-categoria="gaming" data-marca="Asus">
+      <img src="Imágenes/Componentes/Mouses/ASUS_TUF_Gaming_M4_Air.png" alt="Mouse ASUS TUF Gaming M4 Air">
+      <h3>ASUS TUF Gaming M4 Air</h3>
+      <ul class="caracteristicas">
+          <li>- Sensor de 16K DPI</li>
+          <li>- Resistencia al agua</li>
+          <li>- Diseño perforado</li>
+      </ul>
+      <button class="boton_detalles">S/ 180</button>
+  </div>
+
+  <!-- Producto 2 -->
+  <div class="producto" data-tipo="mouse" data-categoria="oficina" data-marca="Otro">
+      <img src="Imágenes/Componentes/Mouses/AJAZZ_AJ199.png" alt="Mouse AJAZZ AJ199">
+      <h3>AJAZZ AJ199</h3>
+      <ul class="caracteristicas">
+          <li>- Sensor PAW 3395</li>
+          <li>- Batería de 40 horas</li>
+          <li>- Peso de 60g.</li>
+      </ul>
+      <button class="boton_detalles">S/ 80</button>
+  </div>
+
+  <!-- Producto 3 -->
+  <div class="producto" data-tipo="mouse" data-categoria="gaming" data-marca="Razer">
+      <img src="Imágenes/Componentes/Mouses/Razer_Orochi_V2.png" alt="Mouse Razer Orochi V2">
+      <h3>Razer Orochi V2</h3>
+      <ul class="caracteristicas">
+          <li>- Autonomía de hasta 950 horas</li>
+          <li>- Peso de 60g</li>
+          <li>- Compatible con AA/AAA</li>
+      </ul>
+      <button class="boton_detalles">S/ 260</button>
+  </div>
+
+  <!-- Producto 4 -->
+  <div class="producto" data-tipo="mouse" data-categoria="oficina" data-marca="Otro">
+      <img src="Imágenes/Componentes/Mouses/Dragonfly_F1_MOBA.png" alt="Mouse Dragonfly F1 MOBA">
+      <h3>Dragonfly F1 MOBA</h3>
+      <ul class="caracteristicas">
+          <li>- Sensor PAW 3395</li>
+          <li>- Batería de 130 horas</li>
+          <li>- Peso de 55g</li>
+      </ul>
+      <button class="boton_detalles">S/ 150</button>
+  </div>
+    <!-- Producto 3 -->
+    <div class="producto" data-tipo="mouse" data-categoria="gaming" data-marca="Corsair">
+      <img src="Imágenes/Componentes/Mouses/Corsair_Harpoon_RGB_Wireless.png" alt="Mouse Corsair Harpoon RGB Wireless">
+      <h3>Corsair Harpoon RGB Wireless</h3>
+      <ul class="caracteristicas">
+          <li>- Botones programables</li>
+          <li>- Diseño compacto</li>
+          <li>- RGB personalizable</li>
+      </ul>
+      <button class="boton_detalles">S/ 200</button>
+  </div>
+
+  <!-- Producto 4 -->
+  <div class="producto" data-tipo="mouse" data-categoria="escolar" data-marca="Logitech">
+      <img src="Imágenes/Componentes/Mouses/Corsair_Katar_Pro_XT.png" alt="Mouse Logitech G203 Lightsync">
+      <h3>Logitech G203 Lightsync</h3>
+      <ul class="caracteristicas">
+          <li>- Sensor de 8K DPI</li>
+          <li>- Diseño ergonómico</li>
+          <li>- Iluminación RGB</li>
+      </ul>
+      <button class="boton_detalles">S/ 110</button>
+  </div>
+  <!-- Audifonos -->
+    <div class="producto" data-tipo="audifono" data-categoria="gaming" data-marca="Razer">
+        <img src="Imágenes/Componentes/Audífonos/Razer_Kraken_V3.png" alt="Audífono Gaming Razer Kraken V3">
+        <h3>Razer Kraken V3</h3>
+        <ul class="caracteristicas">
+            <li>- Sonido envolvente 7.1</li>
+            <li>- Micrófono cardioide retráctil</li>
+            <li>- Almohadillas de gel refrigerante</li>
+        </ul>
+        <button class="boton_detalles">S/ 399</button>
+    </div>
+    <div class="producto" data-tipo="audifono" data-categoria="gaming" data-marca="Corsair">
+      <img src="Imágenes/Componentes/Audífonos/Corsair_HS70_Pro_Wireless.png" alt="Audífono Corsair HS70 Pro Wireless">
+      <h3>Corsair HS70 Pro Wireless</h3>
+      <ul class="caracteristicas">
+          <li>- Conexión inalámbrica</li>
+          <li>- Sonido de alta fidelidad</li>
+          <li>- Micrófono unidireccional</li>
+      </ul>
+      <button class="boton_detalles">S/ 469</button>
+  </div>
+    <div class="producto" data-tipo="audifono" data-categoria="gaming" data-marca="HyperX">
+      <img src="Imágenes/Componentes/Audífonos/HyperX_Cloud_II.png" alt="HyperX Cloud II">
+      <h3>HyperX Cloud II</h3>
+      <ul class="caracteristicas">
+          <li>- Sonido 7.1 envolvente</li>
+          <li>- Diseño ergonómico con almohadillas de espuma viscoelástica</li>
+          <li>- Micrófono con cancelación de ruido</li>
+      </ul>
+      <button class="boton_detalles">S/ 399</button>
+  </div>
+  <div class="producto" data-tipo="audifono" data-categoria="gaming" data-marca="Logitech">
+      <img src="Imágenes/Componentes/Audífonos/Logitech_G_Pro_X.png" alt="Audífono Logitech G Pro X">
+      <h3>Logitech G Pro X</h3>
+      <ul class="caracteristicas">
+          <li>- Sonido DTS Headphone:X 2.0</li>
+          <li>- Micrófono Blue VO!CE</li>
+          <li>- Diseño profesional para eSports</li>
+      </ul>
+      <button class="boton_detalles">S/ 589​</button>
+  </div>
+  <div class="producto" data-tipo="audifono" data-categoria="gaming" data-marca="Otro">
+    <img src="Imágenes/Componentes/Audífonos/SteelSeries_Arctis_7.png" alt="Audífono SteelSeries Arctis 7">
+    <h3>SteelSeries Arctis 7</h3>
+    <ul class="caracteristicas">
+        <li>- Conexión inalámbrica</li>
+        <li>- Sonido DTS Headphone:X v2.0</li>
+        <li>- Micrófono ClearCast con cancelación de ruido</li>
+    </ul>
+    <button class="boton_detalles">S/ 599</button>
+</div>
+<div class="producto" data-tipo="audifono" data-categoria="oficina" data-marca="Otro">
+    <img src="Imágenes/Componentes/Audífonos/Sony_WH-1000XM5.png" alt="Audífono Sony WH-1000XM5">
+    <h3>Sony WH-1000XM5</h3>
+    <ul class="caracteristicas">
+        <li>- Cancelación de ruido activa</li>
+        <li>- Audio Hi-Res</li>
+        <li>- Hasta 30 horas de batería</li>
+    </ul>
+    <button class="boton_detalles">S/ 1,049</button>
+</div>
+<div class="producto" data-tipo="audifono" data-categoria="gaming" data-marca="Otro">
+  <img src="Imágenes/Componentes/Audífonos/Skullcandy_Crusher_Evo.png" alt="Skullcandy Crusher Evo">
+  <h3>Skullcandy Crusher Evo</h3>
+  <ul class="caracteristicas">
+      <li>- Sonido ajustable con base</li>
+      <li>- Micrófono integrado</li>
+      <li>- Almohadillas cómodas</li>
+  </ul>
+  <button class="boton_detalles">S/ 499</button>
+</div>
+<div class="producto" data-tipo="audifono" data-categoria="oficina" data-marca="Otro">
+  <img src="Imágenes/Componentes/Audífonos/Bose_QuietComfort_45.png" alt="Audífono Bose QuietComfort 45">
+  <h3>Bose QuietComfort 45</h3>
+  <ul class="caracteristicas">
+      <li>- Cancelación de ruido</li>
+      <li>- Sonido de alta calidad</li>
+      <li>- Hasta 24 horas de autonomía</li>
+  </ul>
+  <button class="boton_detalles">S/ 1,299</button>
+</div>
+<div class="producto" data-tipo="audifono" data-categoria="estudiantes" data-marca="Otro">
+  <img src="Imágenes/Componentes/Audífonos/Philips_TAH4205.png" alt="Audífono Philips TAH4205">
+  <h3>Philips TAH4205</h3>
+  <ul class="caracteristicas">
+      <li>- Conectividad Bluetooth 5.0</li>
+      <li>- Micrófono</li>
+      <li>- Hasta 30 horas de batería.</li>
+  </ul>
+  <button class="boton_detalles">S/ 229</button>
+</div>
+<div class="producto" data-tipo="audifono" data-categoria="gaming" data-marca="Logitech">
+  <img src="Imágenes/Componentes/Audífonos/Logitech_G335.png" alt="Audífono Logitech G335">
+  <h3>Logitech G335</h3>
+  <ul class="caracteristicas">
+      <li>- Diseño liviano</li>
+      <li>- Micrófono con cancelación de ruido</li>
+      <li>- Sonido envolvente</li>
+  </ul>
+  <button class="boton_detalles">S/ 249</button>
+</div>
+</section>
+</div>
+        </section>
+    </div>
+</main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <a href="informacion.html">Información</a> |
+      <a href="terminos.html">Términos y Condiciones</a> |
+      <a href="faq.html">Preguntas Frecuentes</a> |
+      <a href="https://www.facebook.com" target="_blank">Redes Sociales</a>
+    </p>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts2.js"></script>
+</body>
+</html>
